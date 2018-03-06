@@ -7,16 +7,16 @@ public enum Character {
     /** 女性 */
     , Female(0, 5);
 
-    private int offens;
+    private int offense;
     private int defense;
 
-    Character(int offens, int defense) {
-        this.offens = offens;
+    Character(int offense, int defense) {
+        this.offense = offense;
         this.defense = defense;
     }
 
-    public int getOffens() {
-        return this.offens;
+    public int getOffense() {
+        return this.offense;
     }
 
     public int getDefense() {

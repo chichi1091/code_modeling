@@ -9,16 +9,16 @@ public enum Equipment {
     /** グローブ */
     , Glove(20, 20);
 
-    private int offens;
+    private int offense;
     private int defense;
 
-    Equipment(int offens, int defense) {
-        this.offens = offens;
+    Equipment(int offense, int defense) {
+        this.offense = offense;
         this.defense = defense;
     }
 
-    public int getOffens() {
-        return this.offens;
+    public int getOffense() {
+        return this.offense;
     }
 
     public int getDefense() {

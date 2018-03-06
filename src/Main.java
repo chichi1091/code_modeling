@@ -11,15 +11,15 @@ public class Main {
                         Job martial = new Martial(a, b, c);
 
                         System.out.println(a.toString() + "/" + b.toString() + "/" + c.toString());
-                        System.out.println("戦士　　：[攻撃力]" + fighter.getOffens()
+                        System.out.println("戦士　　：[攻撃力]" + fighter.getOffense()
                                 + " [防御力]" + fighter.getDefense()
                                 + " [スキル]" + fighter.getSkill().getName());
 
-                        System.out.println("魔法使い：[攻撃力]" + magician.getOffens()
+                        System.out.println("魔法使い：[攻撃力]" + magician.getOffense()
                                 + " [防御力]" + magician.getDefense()
                                 + " [スキル]" + magician.getSkill().getName());
 
-                        System.out.println("武道家　：[攻撃力]" + martial.getOffens()
+                        System.out.println("武道家　：[攻撃力]" + martial.getOffense()
                                 + " [防御力]" + martial.getDefense()
                                 + " [スキル]" + martial.getSkill().getName());
                         System.out.println("------------------------------");
@@ -41,7 +41,7 @@ public class Main {
         System.out.print("[戦士_男性_風_剣]");
         Job test = new Fighter(Character.Male, Element.Wind, Equipment.Sword);
         System.out.print("攻撃力:");
-        if(test.getOffens() == 60) System.out.print("OK");
+        if(test.getOffense() == 60) System.out.print("OK");
         else System.out.print("NG");
 
         System.out.print(" 防御力:");
@@ -57,7 +57,7 @@ public class Main {
         System.out.print("[戦士_女性_雷_グローブ]");
         Job test = new Fighter(Character.Female, Element.Thunder, Equipment.Glove);
         System.out.print("攻撃力:");
-        if(test.getOffens() == 35) System.out.print("OK");
+        if(test.getOffense() == 35) System.out.print("OK");
         else System.out.print("NG");
 
         System.out.print(" 防御力:");
@@ -73,7 +73,7 @@ public class Main {
         System.out.print("[魔法使い_男性_水_杖]");
         Job test = new Magician(Character.Male, Element.Water, Equipment.Stick);
         System.out.print("攻撃力:");
-        if(test.getOffens() == 65) System.out.print("OK");
+        if(test.getOffense() == 65) System.out.print("OK");
         else System.out.print("NG");
 
         System.out.print(" 防御力:");
@@ -89,7 +89,7 @@ public class Main {
         System.out.print("[魔法使い_女性_雷_剣]");
         Job test = new Magician(Character.Female, Element.Thunder, Equipment.Sword);
         System.out.print("攻撃力:");
-        if(test.getOffens() == 45) System.out.print("OK");
+        if(test.getOffense() == 45) System.out.print("OK");
         else System.out.print("NG");
 
         System.out.print(" 防御力:");
@@ -105,7 +105,7 @@ public class Main {
         System.out.print("[武道家_男性_風_グローブ]");
         Job test = new Martial(Character.Male, Element.Wind, Equipment.Glove);
         System.out.print("攻撃力:");
-        if(test.getOffens() == 70) System.out.print("OK");
+        if(test.getOffense() == 70) System.out.print("OK");
         else System.out.print("NG");
 
         System.out.print(" 防御力:");
@@ -121,7 +121,7 @@ public class Main {
         System.out.print("[武道家_女性_水_杖]");
         Job test = new Martial(Character.Female, Element.Water, Equipment.Stick);
         System.out.print("攻撃力:");
-        if(test.getOffens() == 40) System.out.print("OK");
+        if(test.getOffense() == 40) System.out.print("OK");
         else System.out.print("NG");
 
         System.out.print(" 防御力:");

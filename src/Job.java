@@ -12,11 +12,11 @@ public abstract class Job {
     protected abstract JobType getJobType();
     protected abstract Skill getSkill();
 
-    public int getOffens() {
-        return character.getOffens()
-                + element.getOffens()
-                + equipment.getOffens()
-                + getOffensCorrection();
+    public int getOffense() {
+        return character.getOffense()
+                + element.getOffense()
+                + equipment.getOffense()
+                + getOffenseCorrection();
     }
 
     public int getDefense() {
@@ -30,7 +30,7 @@ public abstract class Job {
      * 攻撃力補正
      * @return
      */
-    private int getOffensCorrection() {
+    private int getOffenseCorrection() {
         int correction = 0;
 
         if(element == Element.Wind && getJobType() == JobType.Martial) {

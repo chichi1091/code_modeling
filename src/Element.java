@@ -9,16 +9,16 @@ public enum Element {
     /** 雷 */
     , Thunder(15, 0);
 
-    private int offens;
+    private int offense;
     private int defense;
 
-    Element(int offens, int defense) {
-        this.offens = offens;
+    Element(int offense, int defense) {
+        this.offense = offense;
         this.defense = defense;
     }
 
-    public int getOffens() {
-        return this.offens;
+    public int getOffense() {
+        return this.offense;
     }
 
     public int getDefense() {
