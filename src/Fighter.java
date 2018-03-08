@@ -5,15 +5,20 @@ public class Fighter extends Job {
     }
 
     @Override
-    protected JobType getJobType() {
-        return JobType.Fighter;
+    protected Skill getSkill() {
+        if(Character.Male.equals(character)) return Skill.GigaSlash;
+        return Skill.BigBang;
     }
 
     @Override
-    protected Skill getSkill() {
-        if(character == Character.Male) {
-            return Skill.GigaSlash;
-        }
-        return Skill.BigBang;
+    protected int getOffenseCorrection() {
+        if(Equipment.Sword.equals(equipment)) return 20;
+        return 0;
+    }
+
+    @Override
+    protected int getDefenseCorrection() {
+        if(Element.Water.equals(element)) return 10;
+        return 0;
     }
 }

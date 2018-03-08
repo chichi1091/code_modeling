@@ -5,15 +5,20 @@ public class Magician extends Job {
     }
 
     @Override
-    protected JobType getJobType() {
-        return JobType.Magician;
+    protected Skill getSkill() {
+        if(Character.Male.equals(character)) return Skill.Begirama;
+        return Skill.Melami;
     }
 
     @Override
-    protected Skill getSkill() {
-        if(character == Character.Male) {
-            return Skill.Begirama;
-        }
-        return Skill.Melami;
+    protected int getOffenseCorrection() {
+        if(Equipment.Stick.equals(equipment)) return 20;
+        return 0;
+    }
+
+    @Override
+    protected int getDefenseCorrection() {
+        if(Element.Thunder.equals(element)) return 5;
+        return 0;
     }
 }
